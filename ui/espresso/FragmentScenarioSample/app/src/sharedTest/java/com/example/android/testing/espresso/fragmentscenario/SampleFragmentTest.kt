@@ -25,5 +25,7 @@ class SampleFragmentTest {
 
         // now use espresso to look for the fragment's text view and verify it is displayed
         onView(withId(R.id.textView)).check(matches(withText("I am a fragment")));
+
+        Thread.sleep(5000)
     }
 }

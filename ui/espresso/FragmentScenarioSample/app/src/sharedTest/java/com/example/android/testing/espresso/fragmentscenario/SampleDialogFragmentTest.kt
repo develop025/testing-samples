@@ -33,6 +33,8 @@ class SampleDialogFragmentTest {
     // Now use espresso to look for the fragment's text view and verify it is displayed.
     Espresso.onView(ViewMatchers.withId(R.id.textView)).inRoot(isDialog())
       .check(ViewAssertions.matches(ViewMatchers.withText("I am a fragment")));
+
+    Thread.sleep(5000)
   }
 
   @Test
@@ -49,5 +51,7 @@ class SampleDialogFragmentTest {
     // Now use espresso to look for the fragment's text view and verify it is displayed.
     Espresso.onView(ViewMatchers.withId(R.id.textView))
       .check(ViewAssertions.matches(ViewMatchers.withText("I am a fragment")));
+
+    Thread.sleep(5000)
   }
 }
